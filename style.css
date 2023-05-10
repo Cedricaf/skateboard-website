@@ -13,5 +13,33 @@ body{
 }
 
 header{
+    height: 10rem;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 20px 0px inset;
+}
+nav{
+    height: 10rem;
+    width: 100%;
+}
+
+.navmenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
+
+}
+
+.menu-textbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding-right: 5rem;
+}
+
+.menu-text{
+    display: flex;
+    padding: 2rem;
 }
