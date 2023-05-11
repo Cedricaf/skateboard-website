@@ -9,37 +9,88 @@ html{
 }
 
 body{
-    font-family: sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #ffffff;
+    text-decoration: none;
 }
 
 header{
-    height: 10rem;
-    width: 100%;
     background: #ffffff;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 20px 0px inset;
 }
-nav{
-    height: 10rem;
-    width: 100%;
+
+
+a:link{
+    text-decoration: none;
+    color: black;
 }
 
-.navmenu{
-    display: flex;
+a:hover {
+    color: #df0000;
+    border-bottom: 0.5px solid;
+}
+
+.menu-textbox{
+    list-style: none;
+    text-align: center;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-logo-box{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+
+}
+
+.menu-title{
+    display: inline-block;
+    padding: 3rem;
+    font-size: 4rem;
+}
+
+
+.menu-text{
+    display: inline-block;
+    padding: 3rem;
+    font-size: 4rem;
+}
+
+.ul li a{
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+
+
+.content{
+    display: flex;
+    background: white;
+    height: 60rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+}
+
+.content-slogan{
+    display: flex;
+    grid-row: 2/9;
+    grid-column: 6/25;
+    background: black;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.product-list{
     
 
 }
 
-.menu-textbox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    padding-right: 5rem;
-}
 
-.menu-text{
-    display: flex;
-    padding: 2rem;
-}
