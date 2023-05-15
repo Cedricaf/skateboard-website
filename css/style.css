@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #ffffff;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    background: #ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 20px 0px inset;
+}
+
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #df0000;
+    border-bottom: 0.5px solid;
+}
+
+a:visited{
+    color: none;
+}
+
+.menu-textbox{
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-logo-box{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+
+}
+
+.menu-title{
+    display: inline-block;
+    padding: 3rem;
+    font-size: 4rem;
+}
+
+
+.menu-text{
+    display: inline-block;
+    padding: 3rem;
+    font-size: 4rem;
+}
+
+.ul li a{
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.slogan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.slogan--content{
+    height: 30rem;
+    width: 120rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    background: black;
+}
+
+.slogan--text{
+    background: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan--image{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    border: 0.1rem solid gray;
+}
+
+
+.products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 3rem;
+}
+
+.product{
+    display: flex;
+    width: 21.6rem;
+    height: 30rem;
+    background: rgba(255, 255, 255);
+    padding: 0.5rem;
+    gap: 2rem;
+    border-radius: 1rem;
+    border: 0.01rem solid rgba(222, 222, 222);
+
+}
+
+.product--content{
+    display: flex;
+    height: 80%;
+    width: 100%;
+    flex-direction: column;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.product--image{
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+.review{
+    width: 38.7rem;
+    height: 30rem;
+    background: rgba(255, 255, 255);
+    border-radius: 1rem;
+    border: 0.01rem solid rgba(222, 222, 222);
+
+}
+
+/* Productpagina1 */
+
+.categoryBoxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.categoryBox{
+    display: flex;
+    height: 5rem;
+    width: 20rem;
+    border-radius: 1rem;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+
+
+
+/* Productpagina2 */
+
+
+
+
+/*Footer */
+
+.footer{
+    height: 50rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footerBlocks{
+    display: flex;
+    height: 40rem;
+    width: 120rem;
+    padding: 8rem;
+    border-top: 0.1rem solid #DDDDDD;
+    border-bottom: 0.1rem solid #DDDDDD;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+}
+
+.footerBlock{
+    font-weight: 400;
+
+}
+
+
+.footerLink{
+    font-size: 1.5rem;
+    list-style: none;
+    padding: 1rem;
+}
