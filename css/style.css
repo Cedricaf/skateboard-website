@@ -21,10 +21,11 @@ header{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 20px 0px inset;
 }
 
-
+a{
+    color: black;
+}
 a:link{
     text-decoration: none;
-    color: black;
 }
 
 a:hover {
@@ -32,8 +33,19 @@ a:hover {
     border-bottom: 0.5px solid;
 }
 
-a:visited{
-    color: none;
+a:active{
+    color: black;
+}
+
+.image-box{
+    height: 6.9rem;
+    width: 9.6rem;
+}
+
+.image-logo{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .menu-textbox{
@@ -45,16 +57,9 @@ a:visited{
     margin: 0;
 }
 
-.menu-logo-box{
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-
-}
 
 .menu-title{
     display: inline-block;
-    padding: 3rem;
     font-size: 4rem;
 }
 
@@ -63,6 +68,7 @@ a:visited{
     display: inline-block;
     padding: 3rem;
     font-size: 4rem;
+    color: black;
 }
 
 .ul li a{
@@ -78,18 +84,24 @@ a:visited{
 }
 
 .slogan--content{
-    height: 30rem;
+    height: 45rem;
     width: 120rem;
+    position: relative;
     justify-content: center;
     align-items: center;
     border-radius: 0.5rem;
-    background: black;
+    border: 0.1rem solid black;
 }
 
 .slogan--text{
-    background: black;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    color: yellow;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    
+
 }
 
 .slogan--image{
@@ -98,7 +110,7 @@ a:visited{
     overflow: hidden;
     object-fit: cover;
     border-radius: 0.5rem;
-    border: 0.1rem solid gray;
+    
 }
 
 
@@ -108,7 +120,7 @@ a:visited{
     align-items: center;
     gap: 3rem;
     flex-wrap: wrap;
-    padding: 3rem;
+    padding-bottom: 3rem;
 }
 
 .product{
@@ -116,7 +128,7 @@ a:visited{
     width: 21.6rem;
     height: 30rem;
     background: rgba(255, 255, 255);
-    padding: 0.5rem;
+    padding: 2rem;
     gap: 2rem;
     border-radius: 1rem;
     border: 0.01rem solid rgba(222, 222, 222);
@@ -141,6 +153,67 @@ a:visited{
     object-fit: cover;
 }
 
+
+.featured-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F2F2F2;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.featured-product-content{
+    display: flex;
+    background: white;
+    width: 120rem;
+    height: 50rem;
+    border: 0.01rem solid rgba(222, 222, 222);
+    border-radius: 1rem;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.featured-product-title{
+    font-size: 2.4rem;
+}
+
+.featured-product-text{
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+}
+
+.featured-product-image{
+    width: 100%;
+    height: 100%;
+}
+
+.featured-product-image-image{
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+
+.arrow{
+    width: 10%;
+    height: 100%;
+    background: white;
+    font-size: 300%;
+    outline: none;
+    border: none;
+
+}
+
+.arrow:hover{
+    color: red;
+    cursor: pointer;
+
+}
+
 .reviews{
     display: flex;
     justify-content: center;
@@ -150,12 +223,49 @@ a:visited{
 }
 
 .review{
+    display: flex;
     width: 38.7rem;
-    height: 30rem;
+    min-height: 30rem;
+    list-style: none;
+    padding:2rem;
+    flex-direction: column;
     background: rgba(255, 255, 255);
     border-radius: 1rem;
     border: 0.01rem solid rgba(222, 222, 222);
+    position: relative;
+    animation-name: fadeIn;
+    animation-duration: 0.8s;
 
+
+}
+
+.icons{
+    font-size: 200%;
+    color: gold;
+}
+
+
+.review p{
+    font-size: 1.6rem;
+    font-style: italic;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+
+}
+
+
+
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        filter: blur(10px);
+
+    }
+    to{
+        opacity: 1;
+        filter: blur(0);
+    }
 }
 
 /* Productpagina1 */
@@ -182,6 +292,7 @@ a:visited{
 
 
 /* Productpagina2 */
+
 
 
 
