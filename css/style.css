@@ -17,64 +17,49 @@ body{
 }
 
 header{
-    background: #ffffff;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 20px 0px inset;
-}
-
-a{
-    color: black;
-}
-a:link{
-    text-decoration: none;
-}
-
-a:hover {
-    color: #df0000;
-    border-bottom: 0.5px solid;
-}
-
-a:active{
-    color: black;
-}
-
-.image-box{
-    height: 6.9rem;
-    width: 9.6rem;
-}
-
-.image-logo{
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
-
-.menu-textbox{
-    list-style: none;
     text-align: center;
+    background: #ffffff;
+    padding: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 20px 0px inset;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header li{
+    display: inline;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    margin: 0;
-}
-
-
-.menu-title{
-    display: inline-block;
+    padding-left: 4.5rem;
     font-size: 4rem;
 }
 
-
-.menu-text{
-    display: inline-block;
-    padding: 3rem;
-    font-size: 4rem;
-    color: black;
-}
-
-.ul li a{
+header li a{
+    color: #333;
     text-decoration: none;
-    transition: 0.4s;
+    padding: 5rem;
 }
+
+header li img{
+    width: 18rem;
+    float:inline-start;
+}
+
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #df0000;
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.15rem;
+}
+
+
+
+
 
 .slogan{
     display: flex;
@@ -87,23 +72,41 @@ a:active{
     height: 45rem;
     width: 120rem;
     position: relative;
-    justify-content: center;
-    align-items: center;
     border-radius: 0.5rem;
-    border: 0.1rem solid black;
-}
-
-.slogan--text{
-    position: absolute;
-    color: yellow;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 5rem;
     
 
 }
 
+.slogan--text{
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    color: #FFFFFF;
+    padding: 0.3rem;
+    top: 25%;
+    left: 5%;
+    transform: translate(-3%, -3%);
+    font-size: 7rem;
+    
+}
+
+.sloganButton{
+    position: absolute;
+    bottom: 30%;
+    left: 3%;
+    color: white;
+    background: black;
+    font-size: 200%;
+    border-radius: 0.3rem;
+    padding: 2rem;
+    border: none;
+    outline: none;
+}
+
+.sloganButton:hover{
+    cursor: pointer;
+    color: red;
+    background: white;
+}
 .slogan--image{
     height: 100%;
     width: 100%;
@@ -175,7 +178,8 @@ a:active{
 }
 
 .featured-product-title{
-    font-size: 2.4rem;
+    font-size: 3rem;
+    padding-bottom: 1rem;
 }
 
 .featured-product-text{
@@ -201,15 +205,16 @@ a:active{
 .arrow{
     width: 10%;
     height: 100%;
+    color: gray;
     background: white;
-    font-size: 300%;
+    font-size: 500%;
     outline: none;
     border: none;
 
 }
 
 .arrow:hover{
-    color: red;
+    color: #444;
     cursor: pointer;
 
 }
@@ -220,6 +225,7 @@ a:active{
     align-items: center;
     padding: 3rem;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .review{
@@ -233,10 +239,12 @@ a:active{
     border-radius: 1rem;
     border: 0.01rem solid rgba(222, 222, 222);
     position: relative;
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
+    animation: fadeIn 6s infinite;
 
+}
 
+.review:nth-of-type(4), .review:nth-of-type(5), .review:nth-of-type(6), .review:nth-of-type(7), .review:nth-of-type(8), .review:nth-of-type(9){
+    display: none;
 }
 
 .icons{
@@ -257,19 +265,29 @@ a:active{
 
 
 @keyframes fadeIn {
-    from{
+    0% {
         opacity: 0;
-        filter: blur(10px);
-
-    }
-    to{
+        transform: translateX(100%);
+      }
+      10% {
         opacity: 1;
-        filter: blur(0);
-    }
-}
+        transform: translateX(0);
+      }
+      90% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+  }
 
 /* Productpagina1 */
 
+.items{
+
+}
 .categoryBoxes{
     display: flex;
     justify-content: center;
@@ -330,4 +348,18 @@ a:active{
     font-size: 1.5rem;
     list-style: none;
     padding: 1rem;
+}
+
+.footerLink h2{
+    font-size: 2.5rem;
+}
+
+
+@media screen and (max-width: 50rem) {
+    .arrow{
+        display: none;
+    }
+    .reviews{
+        width: 100%;
+    }
 }
