@@ -42,6 +42,7 @@ header li a{
 
 header li img{
     width: 18rem;
+    height: 10rem;
     float:inline-start;
 }
 
@@ -56,9 +57,6 @@ a:hover{
     text-decoration-line: underline;
     text-decoration-thickness: 0.15rem;
 }
-
-
-
 
 
 .slogan{
@@ -93,19 +91,21 @@ a:hover{
     position: absolute;
     bottom: 30%;
     left: 3%;
-    color: white;
-    background: black;
+    color: black;
+    background: rgba(255, 255, 255);
     font-size: 200%;
     border-radius: 0.3rem;
-    padding: 2rem;
+    padding: 1.5rem;
     border: none;
     outline: none;
+    transition: 0.3s transform;
 }
 
 .sloganButton:hover{
     cursor: pointer;
-    color: red;
-    background: white;
+    color: white;
+    background: black;
+    transform: scale(1.2);
 }
 .slogan--image{
     height: 100%;
@@ -219,6 +219,16 @@ a:hover{
 
 }
 
+.avatar{
+    border: 0.2rem solid rgba(68, 68, 68, 0.2);
+    position: absolute;
+    bottom: 3%;
+    left: 2rem;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 4rem;
+}
+
 .reviews{
     display: flex;
     justify-content: center;
@@ -239,7 +249,7 @@ a:hover{
     border-radius: 1rem;
     border: 0.01rem solid rgba(222, 222, 222);
     position: relative;
-    animation: fadeIn 6s infinite;
+
 
 }
 
@@ -261,27 +271,6 @@ a:hover{
 
 }
 
-
-
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateX(100%);
-      }
-      10% {
-        opacity: 1;
-        transform: translateX(0);
-      }
-      90% {
-        opacity: 1;
-        transform: translateX(0);
-      }
-      100% {
-        opacity: 0;
-        transform: translateX(-100%);
-      }
-  }
 
 /* Productpagina1 */
 
