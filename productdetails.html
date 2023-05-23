@@ -5,18 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <script src="js/app.js" defer></script>
+    <script src="https://kit.fontawesome.com/6b17c91111.js" crossorigin="anonymous" defer></script>
+    <title>Productdetails</title>
 </head>
 <body>
 
     <header>
-        <ul>
-            <li><a href="#slogan">Home</a></li>
-            <li><a href="products1.html" target="_blank">Producten1</a></li>
-            <li><a href="products2.html" target="_blank">Producten2</a></li>
-            <li><a href="#footer">Contact</a></li>
-        </ul>
+        <div class="navBar">
+            <div class="logo"><img src="img/skateboard_logo.svg" alt=""></div>
+            <ul class="links">
+                <li><a class="navText" href="index.html">Home</a></li>
+                <li><a class="navText" href="products1.html" target="_blank">Producten</a></li>
+                <li><a class="navText" href="products2.html" target="_blank">Producten</a></li>
+            </ul>
+            <a href="#footer" class="action-button">Contact</a>
+            <div class="toggle-button">
+                <i class="fa-solid fa-bars" style="color: #000000;"></i>
+            </div>
+            <div class="dropdown open">
+                <li><a class="navText" href="index.html">Home</a></li>
+                <li><a class="navText" href="products1.html" target="_blank">Producten</a></li>
+                <li><a class="navText" href="products2.html" target="_blank">Producten</a></li>
+                <li><a class="navText" href="#footer">Contact</a></li>
+            </div>
+        </div>
     </header>
+
+    <section class="product-details">
+        <article class="productBlock">
+            <div class="product-content-details">
+                <h2></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum at earum sit fugiat voluptates natus eveniet vel quibusdam, vero vitae nihil voluptate officia a enim hic nobis unde quas. Placeat.
+                Eligendi amet hic provident excepturi explicabo maiores tempora, voluptas quis ad, minus iusto eveniet facilis vel dolorum at distinctio cumque esse optio sed quae harum illo officiis. Eveniet, magni provident.
+                Rem, temporibus, natus quis ea ipsum totam consectetur accusamus id eligendi, suscipit voluptatem dolore quo soluta magni in unde reprehenderit facilis? In eligendi corrupti, sint voluptatum ipsum placeat labore possimus.
+                Et exercitationem quae ea placeat aliquid dolores veniam repellat asperiores ad, aperiam cum voluptatem. Quasi incidunt beatae consequuntur assumenda architecto, delectus perspiciatis nisi id facere labore dolores ipsa repudiandae excepturi?</p>
+            </div>
+        </article>
+
+
+
+
+    </section>
+
 
 
 
@@ -45,8 +76,8 @@
                     <h2>Contact</h2>
                 </li>
                 <li class="footerLink">Cedric Király</li>
-                <li class="footerLink"><a href="https://github.com/cedricaf" target="_blank">Github</a></li>
-                <li class="footerLink"><a href="mailto:34737@ma-web.nl">Email</a></li>
+                <li class="footerLink"><a class="red-text" href="https://github.com/cedricaf" target="_blank">Github</a></li>
+                <li class="footerLink"><a class="red-text" href="mailto:34737@ma-web.nl">Email</a></li>
             </div>
 
         </div>

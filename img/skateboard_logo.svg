@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 386.42 109.4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f1f2f2;
+      }
+
+      .cls-2 {
+        fill: #231f20;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+        stroke-width: .25px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <symbol id="Arrow_18" data-name="Arrow 18" viewBox="0 0 36.94 81.79">
+      <path class="cls-1" d="m9.51,81.79c-3.03-5.73-5.55-19.87-.33-26.98,10.2-13.91.97-26.1-.25-27.73H0L17.71,0l19.23,26.91-9.52.17c.93,1.95,7.93,15.74-1.16,28.54-6.12,8.61-3.09,20.84.6,26.16l-17.34.02Z"/>
+    </symbol>
+  </defs>
+  <g id="wheels">
+    <ellipse class="cls-2" cx="99.34" cy="11.12" rx="26.33" ry="11"/>
+    <ellipse class="cls-2" cx="277.44" cy="11.3" rx="26.33" ry="11"/>
+  </g>
+  <g id="Layer_1" data-name="Layer 1">
+    <rect class="cls-2" x=".12" y="11.3" width="386.17" height="97.97" rx="48.99" ry="48.99"/>
+    <use width="36.94" height="81.79" transform="translate(244.44 35.99) rotate(90) scale(1.32)" xlink:href="#Arrow_18"/>
+    <circle class="cls-3" cx="52.61" cy="73.96" r="3.5"/>
+    <circle class="cls-3" cx="81" cy="46.29" r="3.5"/>
+    <circle class="cls-3" cx="52.61" cy="46.29" r="3.5"/>
+    <circle class="cls-3" cx="81" cy="73.96" r="3.5"/>
+    <path class="cls-3" d="m296.77,74.13c0-2.75,3.18-4.76,6.06-2.56,2.2,2.89.19,6.06-2.56,6.06-1.93,0-3.5-1.57-3.5-3.5"/>
+    <circle class="cls-3" cx="328.67" cy="46.46" r="3.5"/>
+    <path class="cls-3" d="m296.77,46.46c0-2.75,3.18-4.76,6.06-2.56,2.2,2.89.19,6.06-2.56,6.06-1.93,0-3.5-1.57-3.5-3.5"/>
+    <circle class="cls-3" cx="328.67" cy="74.13" r="3.5"/>
+  </g>
+</svg>

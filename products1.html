@@ -7,16 +7,29 @@
     <title>Productpagina1</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/app.js" defer></script>
+    <script src="https://kit.fontawesome.com/6b17c91111.js" crossorigin="anonymous" defer></script>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <header>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products1.html" target="_blank">Producten1</a></li>
-            <li><a href="products2.html" target="_blank">Producten2</a></li>
-            <li><a href="#footer">Contact</a></li>
-        </ul>
+        <div class="navBar">
+            <div class="logo"><img src="img/skateboard_logo.svg" alt=""></div>
+            <ul class="links">
+                <li><a class="navText" href="index.html">Home</a></li>
+                <li><a class="navText" href="products1.html" target="_blank">Producten</a></li>
+                <li><a class="navText" href="products2.html" target="_blank">Producten</a></li>
+            </ul>
+            <a href="#footer" class="action-button">Contact</a>
+            <div class="toggle-button">
+                <i class="fa-solid fa-bars" style="color: #000000;"></i>
+            </div>
+            <div class="dropdown open">
+                <li><a class="navText" href="index.html">Home</a></li>
+                <li><a class="navText" href="products1.html" target="_blank">Producten</a></li>
+                <li><a class="navText" href="products2.html" target="_blank">Producten</a></li>
+                <li><a class="navText" href="#footer">Contact</a></li>
+            </div>
+        </div>
     </header>
 
 
