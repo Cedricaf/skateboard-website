@@ -63,6 +63,7 @@ const dropDownMenu = document.querySelector(".dropdown")
 
 
 toggleButton.onclick = function(){
+    dropDownMenu.style.display = "block";
     dropDownMenu.classList.toggle('open')
     const isOpen = dropDownMenu.classList.contains('open')
 

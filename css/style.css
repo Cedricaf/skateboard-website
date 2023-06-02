@@ -59,7 +59,7 @@ header{
 }
 
 .toggle-button{
-    padding: 2rem;
+    padding: 2.5rem;
     color: black;
     display: none;
     cursor: pointer;
@@ -91,7 +91,7 @@ header{
     right: 2rem;
     top: 8rem;
     height: 0;
-    width: 40rem;
+    width: 30rem;
     background: #F2F2F2;
     backdrop-filter: blur(15px);
     border-bottom-left-radius: 1rem;
@@ -112,38 +112,7 @@ header{
     height: 24rem;
 
 }
-/*
-nav {
-    text-align: center;
-    background: #ffffff;
-    padding: 2rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 20px 0px inset;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
 
-nav li {
-    display: flex;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    padding-left: 5rem;
-    font-size: 3rem;
-}
-
-nav ul li a {
-    color: #333;
-    text-decoration: none;
-}
-
-nav li img {
-    width: 18rem;
-    height: 10rem;
-    float: inline-start;
-}
-
-*/
 
 .navText{
     color: black;
@@ -225,6 +194,49 @@ nav li img {
 
 }
 
+.impression{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 2rem;
+}
+
+.impression-content{
+    border-radius: 1rem;
+    display: flex;
+    width: 120rem;
+    height: 30rem;
+    padding: 2rem;
+    gap: 6rem;
+    border: 0.01rem solid rgba(222, 222, 222);
+}
+
+.impression-text{
+    font-size: 2rem;
+    width: 100%;
+    width: 100%;
+    padding-left: 2rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    
+}
+
+.impression-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.impression-image-image{
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    object-fit: cover;
+}
 
 .products {
     display: flex;
@@ -259,11 +271,11 @@ nav li img {
 }
 
 .product--image {
-    height: 100%;
+    height: auto;
     width: 80%;
     border-radius: 1rem;
     overflow: hidden;
-    object-fit: cover;
+    object-fit: contain;
 
 }
 
@@ -412,21 +424,130 @@ nav li img {
 
 /* productdetails*/
 
+
 .product-details{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
+    padding: 1.5rem;
 }
 
 .productBlock{
+    display: flex;
     width: 120rem;
-    height: 30rem;
+    height: auto;
+    padding: 2rem;
+    gap: 5rem;
     background: #F2F2F2;
     
 }
 
+.product-content-image{
+    width: 50%;
+    height: 30rem;
+    border-radius: 0.5rem;
+    object-fit: contain;
+    overflow: hidden;
+    
+}
 
+.product-content-image-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.product-content-description{
+    position: relative;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.shoppingCartLink{
+    color: black;
+}
+.product-content-cartButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 8rem;
+    border: 0.2rem solid rgba(68, 68, 68, 0.2);
+    border-radius: 10%;
+    cursor: pointer;
+    font-size: 5rem;
+    position:absolute;
+    top: 0;
+    right: 2%;
+}
+
+.product-content-title{
+    font-size: 3rem;
+}
+
+.product-content-features{
+
+}
+
+.product-content-price{
+    color: red;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.product-content-text{
+    font-size: 1.6rem;
+}
+
+.product-content-button{
+
+  background: black;
+  border: 1px solid black;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  transition: background-color 0.4s;
+
+}
+
+.product-content-button:hover,
+.product-content-button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: black;
+}
+
+.product-content-button:active {
+  opacity: .5;
+}
+
+.product-details2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
 /* Productpagina1 */
 
 .items {
@@ -569,7 +690,13 @@ nav li img {
 
 /* responsiveness */
 
-@media screen and (max-width: 40rem) {
+@media screen and (max-width: 45rem) {
+    .logo{
+        padding-left: 2rem;
+    }
+    .impression-image{
+        display: none;
+    }
 
     .navBar .links,
     .navBar .action-button{
@@ -581,7 +708,7 @@ nav li img {
     }
 
     .dropdown{
-        display: block;
+        display: none;
     }
     .arrow{
         display: none;
@@ -631,15 +758,28 @@ nav li img {
         font-size: 3rem;
     }
     
+    .product-content-image{
+        display: none;
+    }
+    .product-content-cartButton{
+        display: none;
+    }
 
-
-    
+    .product-content-description{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
 
 
 }
 
 
 @media screen and (max-width: 100.9rem){
+    
     .arrow{
         width: 100%;
         height: 80%;
