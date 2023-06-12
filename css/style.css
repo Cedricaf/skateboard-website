@@ -157,7 +157,7 @@ header{
     top: 25%;
     left: 5%;
     transform: translate(-3%, -3%);
-    font-size: 6rem;
+    font-size: 5rem;
 
 }
 
@@ -209,6 +209,7 @@ header{
     height: 30rem;
     padding: 2rem;
     gap: 6rem;
+    background: #DF0000;
     border: 0.01rem solid rgba(222, 222, 222);
 }
 
@@ -216,6 +217,7 @@ header{
     font-size: 2rem;
     width: 100%;
     width: 100%;
+    color: white;
     padding-left: 2rem;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -391,7 +393,7 @@ header{
     list-style: none;
     padding: 2rem;
     flex-direction: column;
-    background: rgba(255, 255, 255);
+    background: #DF0000;
     border-radius: 1rem;
     border: 0.01rem solid rgba(222, 222, 222);
     position: relative;
@@ -415,6 +417,7 @@ header{
 
 
 .review p {
+    color: white;
     font-size: 1.6rem;
     font-style: italic;
     padding-top: 1rem;
@@ -438,13 +441,14 @@ header{
     height: auto;
     padding: 2rem;
     gap: 5rem;
-    background: #F2F2F2;
+    border-radius: 1rem;
+    background: red;
     
 }
 
 .product-content-image{
     width: 50%;
-    height: 30rem;
+    height: 52rem;
     border-radius: 0.5rem;
     object-fit: contain;
     overflow: hidden;
@@ -465,6 +469,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    color: white;
 
 }
 
@@ -491,12 +496,33 @@ header{
 }
 
 .product-content-features{
+    display: flex;
+    gap: 3rem;
+}
 
+.circleDefault{
+    cursor: pointer;
+    border: 0.2rem solid rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+}
+
+.blue{
+    background: blue;
+}
+
+.black{
+    background: black;
+}
+
+.yellow{
+    background: yellow;
 }
 
 .product-content-price{
-    color: red;
-    font-size: 3rem;
+    color: white;
+    font-size: 3.5rem;
     font-weight: 500;
 }
 .product-content-text{
@@ -533,7 +559,7 @@ header{
 
 .product-content-button:hover,
 .product-content-button:active {
-  background-color: initial;
+  background-color: white;
   background-position: 0 0;
   color: black;
 }
@@ -619,12 +645,31 @@ header{
 }
 
 .cart-item {
+    display: flex;
     font-size: 2rem;
     width: 120rem;
     height: 20rem;
+    justify-content: center;
+    align-items: center;
 
 }
 
+.cart-image{
+    height: 90%;
+    width: auto;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.cart-image-image{
+    height: 100%;
+    width: 100%;
+}
+
+.cart-text{
+    font-size: 2rem;
+    color: black;
+}
 
 
 

@@ -72,3 +72,10 @@ toggleButton.onclick = function(){
     : 'fa-solid fa-bars'
 
 }
+
+const cartButton = document.getElementById("cartButton");
+const cartIcon = document.getElementById("cartIcon");
+
+cartButton.onclick = function(){
+    cartIcon.style.color = "#29A945";
+}
