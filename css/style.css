@@ -478,6 +478,7 @@ header{
 }
 .product-content-cartButton{
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     width: 8rem;
@@ -489,6 +490,23 @@ header{
     position:absolute;
     top: 0;
     right: 2%;
+}
+
+.itemAmount{
+    width: 2.8rem;
+    height: 2.8rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0.1rem solid black;
+    background: white;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
 }
 
 .product-content-title{
@@ -576,18 +594,6 @@ header{
 }
 /* Productpagina1 */
 
-.items {
-    
-    
-}
-
-.item{
-    
-}
-
-.item-content{
-
-}
 
 .categoryBoxes {
     display: flex;
@@ -603,8 +609,41 @@ header{
     display: flex;
     height: 5rem;
     width: 20rem;
+    background: red;
     border-radius: 1rem;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.category-filter{
+    width: 5rem;
+    height: 5rem;
+    -webkit-appearance: none;
+    appearance: none;
+    background: black;
+    border-radius: 1rem;
+}
+
+.category-filter:checked{
+    background: green;
+
+}
+
+.category-filter:checked ~ .category-label{
+    text-decoration: underline;
+}
+
+.category-filter:hover{
+    cursor: pointer;
+}
+
+
+.category-label{
+    color: white;
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4rem;
 }
 
 

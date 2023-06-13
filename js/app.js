@@ -73,9 +73,16 @@ toggleButton.onclick = function(){
 
 }
 
-const cartButton = document.getElementById("cartButton");
-const cartIcon = document.getElementById("cartIcon");
+const cartButton = document.getElementsByClassName("product-content-button");
+const cartAmount = document.getElementsByClassName("itemAmount")[0];
 
-cartButton.onclick = function(){
-    cartIcon.style.color = "#29A945";
+let cartMessage = 0;
+
+for (let index = 0; index < cartButton.length; index++) {
+    cartButton[index].onclick = function(){
+        cartMessage += 1;
+        cartAmount.innerHTML = cartMessage;
+        cartAmount.style.color = "#29A945";
+    }
+    
 }
