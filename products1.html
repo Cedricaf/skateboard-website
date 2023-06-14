@@ -7,17 +7,18 @@
     <title>Productpagina1</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/app.js" defer></script>
+    <script src="/js/producten.js" defer></script>
     <script src="https://kit.fontawesome.com/6b17c91111.js" crossorigin="anonymous" defer></script>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <header>
         <div class="navBar">
-            <div class="logo"><img src="img/skateboard_logo.svg" alt=""></div>
+            <figure class="logo"><img src="img/skateboard_logo.svg" alt=""></figure>
             <ul class="links">
                 <li><a class="navText" href="index.html">Home</a></li>
-                <li><a class="navText" href="products1.html" target="_blank">Producten</a></li>
-                <li><a class="navText" href="products2.html" target="_blank">Producten</a></li>
+                <li><a class="navText" href="products1.html">Producten</a></li>
+                <li><a class="navText" href="products2.html">Producten</a></li>
             </ul>
             <a href="#footer" class="action-button">Contact</a>
             <div class="toggle-button">
@@ -25,8 +26,8 @@
             </div>
             <div class="dropdown open">
                 <li><a class="navText" href="index.html">Home</a></li>
-                <li><a class="navText" href="products1.html" target="_blank">Producten</a></li>
-                <li><a class="navText" href="products2.html" target="_blank">Producten</a></li>
+                <li><a class="navText" href="products1.html">Producten</a></li>
+                <li><a class="navText" href="products2.html">Producten</a></li>
                 <li><a class="navText" href="#footer">Contact</a></li>
             </div>
         </div>
@@ -37,41 +38,39 @@
     <section class="categoryBoxes">
         <div class="categoryBox">
             <input id="checkbox-adventure" type="checkbox" class="category-filter">
-            <label for="checkbox-adventure" class="category-label">Blue</label>
+            <label for="checkbox-adventure" class="category-label">Dark</label>
         </div>
         <div class="categoryBox">
             <input id="checkbox-horror" type="checkbox" class="category-filter">
-            <label for="checkbox-horror" class="category-label">Yellow</label>
+            <label for="checkbox-horror" class="category-label">Light</label>
         </div class="categoryBox">
         <div class="categoryBox">
             <input id="checkbox-fantasy" type="checkbox" class="category-filter">
-            <label for="checkbox-fantasy" class="category-label">Red</label>
+            <label for="checkbox-fantasy" class="category-label">Wood</label>
         </div class="categoryBox">
     </section>
 
     <ul class="products">
-        <li class="product" data-category="fantasy"><img src="" alt="skateboard"></li>
-        <li class="product" data-category="adventure"><img src="" alt="skateboard"></li>
-        <li class="product" data-category="horror"><img src="" alt="skateboard"></li>
-        <li class="product" data-category="fantasy"><img src="" alt="skateboard"></li>
-        <li class="product" data-category="adventure"><img src="" alt="skateboard"></li>
-        <li class="product" data-category="horror"><img src="" alt="skateboard"></li>
-        <li class="product" data-category="fantasy"><img src="" alt="skateboard"></li>
-        <li class="product" data-category="adventure"><img src="" alt="skateboard"></li>
-        <li class="product" data-category="horror"><img src="" alt="skateboard"></li>
-        <li class="product" data-category="fantasy"><img src="" alt=" skateboard"></li>
-        <li class="product" data-category="adventure"><img src="" alt="skateboard"></li>
-        <li class="product" data-category="horror"><img src="" alt="skateboard"></li>
-        <li class="product" data-category="fantasy"><img src="" alt=" skateboard"></li>
-        <li class="product" data-category="adventure"><img src="" alt="skateboard"></li>
-    
-        
+        <li class="product" data-category="fantasy"><img id="js--image-wood11" src="" alt="skateboard"></li>
+        <li class="product" data-category="adventure"><img id="js--image-dark1" src="" alt="skateboard"></li>
+        <li class="product" data-category="horror"><img id="js--image-light5" src="" alt="skateboard"></li>
+        <li class="product" data-category="fantasy"><img id="js--image-wood12" src="" alt="skateboard"></li>
+        <li class="product" data-category="adventure"><img id="js--image-dark2" src="" alt="skateboard"></li>
+        <li class="product" data-category="horror"><img id="js--image-light6" src="" alt="skateboard"></li>
+        <li class="product" data-category="fantasy"><img id="js--image-wood13" src="" alt="skateboard"></li>
+        <li class="product" data-category="adventure"><img id="js--image-dark3" src="" alt="skateboard"></li>
+        <li class="product" data-category="horror"><img id="js--image-light7" src="" alt="skateboard"></li>
+        <li class="product" data-category="fantasy"><img id="js--image-wood14" src="" alt="skateboard"></li>
+        <li class="product" data-category="adventure"><img id="js--image-dark4" src="" alt="skateboard"></li>
+        <li class="product" data-category="horror"><img id="js--image-light8" src="" alt="skateboard"></li>
+        <li class="product" data-category="horror"><img id="js--image-light9" src="" alt="skateboard"></li>
+        <li class="product" data-category="horror"><img id="js--image-light10" src="" alt="skateboard"></li>
         
     </ul>
     
 
-    <footer class="footer">
-        <div class="footerBlocks">
+    <footer id="footer" class="footer">
+        <section class="footerBlocks">
             <div class="footerBlock">
                 <li class="footerLink">
                     <h2>Service</h2>
@@ -99,7 +98,7 @@
                 <li class="footerLink"><a href="mailto:34737@ma-web.nl">Email</a></li>
             </div>
 
-        </div>
+        </section>
 
     </footer>
 </body>
