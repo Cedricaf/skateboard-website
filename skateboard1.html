@@ -20,6 +20,9 @@
                 <li><a class="navText" href="index.html">Home</a></li>
                 <li><a class="navText" href="products1.html">Producten</a></li>
                 <li><a class="navText" href="products2.html">Producten</a></li>
+                <li class="searchBar">
+                    <input type="text" placeholder="Zoeken" class="searchBar__input">
+                </li>
             </ul>
             <a href="#footer" class="action-button">Contact</a>
             <div class="toggle-button">
@@ -37,7 +40,7 @@
     <section class="product-details">
         <article class="productBlock">
             <div class="product-content-image">
-                <img src="img/rs(1).webp" alt="" class="product-content-image-image">
+                <img id="js--imageChange" src="img/rs(1).webp" alt="image of skateboard" class="product-content-image-image">
             </div>
             <div class="product-content-description">
                 <a href="shoppingcart.html" class="shoppingCartLink">
@@ -51,9 +54,15 @@
                     <h3>Carver JOB Camo Tiger</h3>
                 </div>
                 <div class="product-content-features">
-                    <figure class="circleDefault blue"></figure>
-                    <figure class="circleDefault black"></figure>
-                    <figure class="circleDefault yellow"></figure>
+                    <figure id="js--circleButton1" class="circleDefault">
+                        <img src="img/rs(1.1).webp" alt="image of skateboard" class="imageFigure">
+                    </figure>
+                    <figure id="js--circleButton2" class="circleDefault">
+                        <img src="img/rs(1.2).webp" alt="image of skateboard">
+                    </figure>
+                    <figure id="js--circleButton3" class="circleDefault">
+                        <img src="img/rs(1.3).webp" alt="image of skateboard">
+                    </figure>
                 </div>
                 <h3 class="product-content-price">
                     €155,-

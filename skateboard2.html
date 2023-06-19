@@ -20,6 +20,9 @@
                 <li><a class="navText" href="index.html">Home</a></li>
                 <li><a class="navText" href="products1.html">Producten</a></li>
                 <li><a class="navText" href="products2.html">Producten</a></li>
+                <li class="searchBar">
+                    <input type="text" placeholder="Zoeken" class="searchBar__input">
+                </li>
             </ul>
             <a href="#footer" class="action-button">Contact</a>
             <div class="toggle-button">
@@ -37,7 +40,7 @@
     <section class="product-details2">
         <article class="productBlock">
             <div class="product-content-image">
-                <img src="img/rs(2).webp" alt="" class="product-content-image-image">
+                <img id="js--imageChange2" src="img/rs(2).webp" alt="image of skateboard" class="product-content-image-image">
             </div>
             <div class="product-content-description">
                 <a href="shoppingcart.html" class="shoppingCartLink">
@@ -50,9 +53,15 @@
                     <h3>Blind OG Water Color</h3>
                 </div>
                 <div class="product-content-features">
-                    <figure class="circleDefault blue"></figure>
-                    <figure class="circleDefault black"></figure>
-                    <figure class="circleDefault yellow"></figure>
+                    <figure id="js--circleButton4" class="circleDefault">
+                        <img src="img/rs(2.1).webp" alt="image of skateboard" class="imageFigure">
+                    </figure>
+                    <figure id="js--circleButton5" class="circleDefault">
+                        <img src="img/rs(2.2).webp" alt="image of skateboard">
+                    </figure>
+                    <figure id="js--circleButton6" class="circleDefault">
+                        <img src="img/rs(2.3).webp" alt="image ofd skateboard">
+                    </figure>
                 </div>
                 <h3 class="product-content-price">
                     €160,-
@@ -82,13 +91,15 @@
                 </button>
             </div>
 
+
+
         </article>
     </section>
 
 
 
 
-    <footer id="footer" class="footer">
+   <footer id="footer" class="footer">
         <section class="footerBlocks">
             <div class="footerBlock">
                 <li class="footerLink">

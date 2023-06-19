@@ -34,7 +34,7 @@ for (let index = 0; index < arrowButtons.length; index++) {
 
         }
 
-        else if (modes === "third-sight"){
+        else if (modes === "third-sight") {
             reviews[0].style.display = "block";
             reviews[1].style.display = "block";
             reviews[2].style.display = "block";
@@ -47,9 +47,9 @@ for (let index = 0; index < arrowButtons.length; index++) {
             modes = "first-sight";
 
         }
-        else{
+        else {
             console.log("error");
-            
+
         }
     }
 }
@@ -62,14 +62,14 @@ const dropDownMenu = document.querySelector(".dropdown")
 
 
 
-toggleButton.onclick = function(){
+toggleButton.onclick = function () {
     dropDownMenu.style.display = "block";
     dropDownMenu.classList.toggle('open')
     const isOpen = dropDownMenu.classList.contains('open')
 
     toggleButtonIcon.classList = isOpen
-    ? 'fa-solid fa-xmark'
-    : 'fa-solid fa-bars'
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
 
 }
 
@@ -79,104 +79,98 @@ const cartAmount = document.getElementsByClassName("itemAmount")[0];
 let cartMessage = 0;
 
 for (let index = 0; index < cartButton.length; index++) {
-    cartButton[index].onclick = function(){
+    cartButton[index].onclick = function () {
         cartMessage += 1;
         cartAmount.innerHTML = cartMessage;
         cartAmount.style.color = "#29A945";
     }
-    
-}
-
-let allGames = document.getElementsByClassName("product");
-
-let filters = document.getElementsByClassName("category-filter");
-
-for (let index = 0; index < filters.length; index++) {
-    filters[index].checked = true;
-    
-}
-
-let adventureFilter = document.getElementById("checkbox-adventure");
-let horrorFilter = document.getElementById("checkbox-horror");
-let fantasyFilter = document.getElementById("checkbox-fantasy");
-
-
-filters[0].onchange = function(){
-    console.log(filters[0].checked)
-    if (filters[0].checked === true){
-        for (let index = 0; index < allGames.length; index++) {
-            if (allGames[index].dataset.category === "adventure") {
-                allGames[index].style.display = "block";
-
-            
-            }
-            
-        }
-        
-    }
-    else{
-        for (let index = 0; index < allGames.length; index++) {
-            if (allGames[index].dataset.category === "adventure"){
-                allGames[index].style.display= "none";
-            }
-            
-    
-        }
-    }
-
 
 }
 
-filters[1].onchange = function(){
-    console.log(filters[1].checked)
-    if (filters[1].checked === true){
-        for (let index = 0; index < allGames.length; index++) {
-            if (allGames[index].dataset.category === "horror") {
-                allGames[index].style.display = "block";
 
-            
-            }
-            
-        }
-        
-    }
-    else{
-        for (let index = 0; index < allGames.length; index++) {
-            if (allGames[index].dataset.category === "horror"){
-                allGames[index].style.display= "none";
-            }
-            
+const image = document.getElementById("js--imageChange");
+const circleButton1 = document.getElementById("js--circleButton1");
+const circleButton2 = document.getElementById("js--circleButton2");
+const circleButton3 = document.getElementById("js--circleButton3");
+
+console.log("hjellofsdf");
+circleButton1.onmouseenter = function () {
+    image.src = "img/rs(1.1).webp";
+    circleButton1.style.border = '0.4rem solid black';
+}
+
+circleButton1.onmouseleave = function () {
+    image.src = "img/rs(1).webp";
+    circleButton1.style.border = "0rem";
     
-        }
-    }
+}
 
+
+circleButton2.onmouseover = function () {
+    image.src = "img/rs(1.2).webp";
+    circleButton2.style.border = '0.4rem solid black';
+}
+
+circleButton2.onmouseleave = function () {
+    image.src = "img/rs(1).webp";
+    circleButton2.style.border = "0";
 
 }
 
-filters[2].onchange = function(){
-    console.log(filters[2].checked)
-    if (filters[2].checked === true){
-        for (let index = 0; index < allGames.length; index++) {
-            if (allGames[index].dataset.category === "fantasy") {
-                allGames[index].style.display = "block";
 
-            
-            }
-            
-        }
-        
-    }
-    else{
-        for (let index = 0; index < allGames.length; index++) {
-            if (allGames[index].dataset.category === "fantasy"){
-                allGames[index].style.display= "none";
-            }
-            
-    
-        }
-    }
+circleButton3.onmouseover = function () {
+    image.src = "img/rs(1.3).webp";
+    circleButton3.style.border = '0.4rem solid black';
+}
 
+circleButton3.onmouseleave = function () {
+    image.src = "img/rs(1).webp";
+    circleButton3.style.border = '0rem';
 
 }
+
+
+const image2 = document.getElementById("js--imageChange2");
+const circleButton4 = document.getElementById("js--circleButton4");
+const circleButton5 = document.getElementById("js--circleButton5");
+const circleButton6 = document.getElementById("js--circleButton6");
+
+console.log("hjellofsdf");
+circleButton4.onmouseover = function () {
+    image.src = "img/rs(2.1).webp";
+}
+
+circleButton4.onmouseleave = function () {
+    image.src = "img/rs(2).webp";
+
+}
+
+
+circleButton5.onmouseover = function () {
+    image.src = "img/rs(2.2).webp";
+}
+
+circleButton5.onmouseleave = function () {
+    image.src = "img/rs(2).webp";
+
+}
+
+circleButton6.onmouseover = function () {
+    image.src = "img/rs(2.3).webp";
+}
+
+circleButton6.onmouseleave = function () {
+    image.src = "img/rs(2).webp";
+
+}
+
+
+
+
+
+
+
+
+
 
 
