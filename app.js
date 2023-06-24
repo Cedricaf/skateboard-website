@@ -93,76 +93,32 @@ const circleButton1 = document.getElementById("js--circleButton1");
 const circleButton2 = document.getElementById("js--circleButton2");
 const circleButton3 = document.getElementById("js--circleButton3");
 
-console.log("hjellofsdf");
-circleButton1.onmouseenter = function () {
+circleButton1.onclick = function () {
     image.src = "img/rs(1.1).webp";
     circleButton1.style.border = '0.4rem solid black';
-}
-
-circleButton1.onmouseleave = function () {
-    image.src = "img/rs(1).webp";
-    circleButton1.style.border = "0rem";
-    
-}
-
-
-circleButton2.onmouseover = function () {
-    image.src = "img/rs(1.2).webp";
-    circleButton2.style.border = '0.4rem solid black';
-}
-
-circleButton2.onmouseleave = function () {
-    image.src = "img/rs(1).webp";
     circleButton2.style.border = "0";
-
+    circleButton3.style.border = "0";
 }
 
 
-circleButton3.onmouseover = function () {
+circleButton2.onclick = function () {
+    image.src = "img/rs(1.2).webp";
+    circleButton1.style.border = "0rem";
+    circleButton2.style.border = '0.4rem solid black';
+    circleButton3.style.border = "0";
+}
+
+
+
+circleButton3.onclick = function () {
     image.src = "img/rs(1.3).webp";
+    circleButton1.style.border = '0rem';
+    circleButton2.style.border = '0rem';
     circleButton3.style.border = '0.4rem solid black';
 }
 
-circleButton3.onmouseleave = function () {
-    image.src = "img/rs(1).webp";
-    circleButton3.style.border = '0rem';
-
-}
 
 
-const image2 = document.getElementById("js--imageChange2");
-const circleButton4 = document.getElementById("js--circleButton4");
-const circleButton5 = document.getElementById("js--circleButton5");
-const circleButton6 = document.getElementById("js--circleButton6");
-
-console.log("hjellofsdf");
-circleButton4.onmouseover = function () {
-    image.src = "img/rs(2.1).webp";
-}
-
-circleButton4.onmouseleave = function () {
-    image.src = "img/rs(2).webp";
-
-}
-
-
-circleButton5.onmouseover = function () {
-    image.src = "img/rs(2.2).webp";
-}
-
-circleButton5.onmouseleave = function () {
-    image.src = "img/rs(2).webp";
-
-}
-
-circleButton6.onmouseover = function () {
-    image.src = "img/rs(2.3).webp";
-}
-
-circleButton6.onmouseleave = function () {
-    image.src = "img/rs(2).webp";
-
-}
 
 
 

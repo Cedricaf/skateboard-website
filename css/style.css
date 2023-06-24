@@ -70,24 +70,10 @@ header {
     width: 18rem;
     font-size: 2rem;
     padding: 1rem;
-    border: 0.2rem solid black;
+    border: 0.2rem solid rgb(222, 222, 222, 4);
     border-radius: 0.5rem;
 }
 
-.searchBar__glass{
-    width: 4rem;
-    height: 100%;
-    background: black;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 180%;
-    color: white;
-    position: absolute;
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-}
 
 .toggle-button {
     padding: 2.5rem;
@@ -234,41 +220,51 @@ header {
 }
 
 .impression-content {
-    border-radius: 1rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
     width: 120rem;
-    height: 30rem;
-    padding: 2rem;
-    gap: 6rem;
+    height: auto;
+    padding: 3rem;
+    gap: 2rem;
     background: #DF0000;
     border: 0.01rem solid rgba(222, 222, 222);
+    flex-wrap: wrap;
 }
 
-.impression-text {
-    font-size: 2rem;
-    width: 100%;
-    width: 100%;
-    color: white;
-    padding-left: 2rem;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-
-}
-
-.impression-image {
-    width: 100%;
-    height: 100%;
+.impression-block {
+    width: 50rem;
+    height: 30rem;
     border-radius: 1rem;
+    background: #DF0000;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+    
+
+.impression-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.01rem solid rgba(222, 222, 222);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10%;
     padding: 1rem;
+    font-size: 500%;
+    color: white;
 }
 
-.impression-image-image {
-    height: 100%;
-    width: 100%;
-    border-radius: 1rem;
-    overflow: hidden;
-    object-fit: cover;
+
+.impression-text{
+    font-size: 3rem;
+    color: white;
 }
 
 .products {
@@ -569,15 +565,32 @@ header {
 }
 
 .blue {
-    background: blue;
+    background: #16AAA4;
 }
 
 .black {
-    background: black;
+    background: #242220;
 }
 
 .yellow {
     background: yellow;
+}
+
+.cyan{
+    background: #00fef9;
+}
+
+
+.brown{
+    background: #A57C55;
+}
+
+.lightGreen{
+    background: #52FC19;
+}
+
+.pink{
+    background: #f70cfe;
 }
 
 .product-content-price {
@@ -668,11 +681,11 @@ header {
     -webkit-appearance: none;
     appearance: none;
     background: black;
-    border-radius: 1rem;
+    border-radius: 0.8rem;
 }
 
 .category-filter:checked {
-    background: green;
+    background: white;
 
 }
 
@@ -765,47 +778,49 @@ header {
     gap: 2rem;
 }
 
-.cart-content {
-    display: flex;
-    border: 0.01rem solid rgba(222, 222, 222);
-    background: white;
-    border-radius: 0.5rem;
-    width: 120rem;
-    height: 25rem;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
 
+.shopItems{
+    width: 120rem;
+    height: 80%;
+    
 }
 
-.cart-item {
-    display: flex;
-    font-size: 2rem;
-    width: 120rem;
-    height: 20rem;
-    justify-content: center;
-    align-items: center;
-
+.checkout__list{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: repeat(4, 20rem);
+    
 }
 
-.cart-image {
+.checkout__listItem{
+    list-style: none;
+    grid-row: span 1;
+    padding: 1rem;
+    border: 0.2rem solid rgba(68, 68, 68, 0.2);
+    display: flex;
+    border-radius: 2rem;
+    background: #F6F6F6;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.checkout__image{
     height: 90%;
     width: auto;
-    object-fit: cover;
+    object-fit: contain;
     overflow: hidden;
 }
 
-.cart-image-image {
-    height: 100%;
-    width: 100%;
-}
-
-.cart-text {
+.checkout__title{
     font-size: 2rem;
-    color: black;
+    font-weight: 700;
 }
 
-
+.checkout__amount{
+    font-size: 3rem;
+}
 
 
 

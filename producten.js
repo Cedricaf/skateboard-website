@@ -14,7 +14,7 @@ const Image13 = document.getElementById("js--image-wood13");
 const Image14 = document.getElementById("js--image-wood14");
 
 
-let data = fetch("js/data.json").then(
+let data = fetch("data.json").then(
     function (incomingData) {
         return incomingData.json();
     }).then(
