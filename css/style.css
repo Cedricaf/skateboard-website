@@ -257,7 +257,7 @@ header {
     height: 10rem;
     border-radius: 10%;
     padding: 1rem;
-    font-size: 500%;
+    font-size: 5rem;
     color: white;
 }
 
@@ -604,32 +604,26 @@ header {
 }
 
 .product-content-button {
-
     background: black;
     border: 1px solid black;
     border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: #FFF;
     cursor: pointer;
     display: inline-block;
-    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 16px;
+    font: 800 16px/16px nunito, roboto, proxima-nova, sans-serif;
     min-height: 40px;
     outline: 0;
     padding: 12px 14px;
     text-align: center;
-    text-rendering: geometricprecision;
-    text-transform: none;
+    text-rendering: geometricPrecision;
     user-select: none;
-    -webkit-user-select: none;
     touch-action: manipulation;
     vertical-align: middle;
     transition: background-color 0.4s;
-
 }
+
 
 .product-content-button:hover,
 .product-content-button:active {
@@ -794,7 +788,7 @@ header {
     display: flex;
     gap: 0.8rem;
     flex-direction: column;
-    height: 5rem;
+    height: 100%;
     width: 16rem;
     background: white;
 }
@@ -805,10 +799,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .filterButton{
-    transition: box-shadow .4s;
+    transition: box-shadow .3s;
     width: 3rem;
     height: 3rem;
     padding-right: 2rem;
