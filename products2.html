@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productpagina2</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="app.js" defer></script>
+    <script src="./js/producten2.js" defer></script>
     <script src="https://kit.fontawesome.com/6b17c91111.js" crossorigin="anonymous" defer></script>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
     <header>
         <div class="navBar">
@@ -36,34 +38,50 @@
     </header>
 
 
-    <article class="categoryBoxes">
+    <section class="categoryBoxes">
         <div class="dropdownBox">
-            <p>Yooo</p>
+            <h2 class="dropdownTitle">Prijs</h2>
             <div class="dropdown-content">
-                <p>test</p>
+                <div class="dropdownFilters">
+                    <div class="dropdownFilter">
+                        <input id="checkbox-100"type="checkbox" class="filterButton">
+                        <label for="checkbox-100" class="dropdown-label">100-150</label>
+                    </div>
+                    <div class="dropdownFilter">
+                        <input id="checkbox-150" type="checkbox" class="filterButton">
+                        <label for="checkbox-150" class="dropdown-label">150-200</label>
+                    </div>
+                    <div class="dropdownFilter">
+                        <input id="checkbox-300" type="checkbox" class="filterButton">
+                        <label for="checkbox-300" class="dropdown-label">300-500</label>
+                    </div>
+                </div>
+                
             </div>
         </div>
 
-    </article>
+    </section>
 
-    <article class="products">
-        <div class="product"></div>
-        <div class="product"></div>
-        <div class="product"></div>
-        <div class="product"></div>
-        <div class="product"></div>
-        <div class="product"></div>
-        <div class="product"></div>
-        <div class="product"></div>
-        <div class="product"></div>
-        <div class="product"></div>
-        <div class="product"></div>
-        <div class="product"></div>
-        <div class="product"></div>
-        <div class="product"></div>
+    <ul class="priceProducts">
+        <li class="priceProduct" data-category="100"><img id="js--image-11" src="" alt="skateboard"></li>
+        <li class="priceProduct" data-category="150"><img id="js--image-1" src="" alt="skateboard"></li>
+        <li class="priceProduct" data-category="300"><img id="js--image-5" src="" alt="skateboard"></li>
+        <li class="priceProduct" data-category="100"><img id="js--image-12" src="" alt="skateboard"></li>
+        <li class="priceProduct" data-category="150"><img id="js--image-2" src="" alt="skateboard"></li>
+        <li class="priceProduct" data-category="300"><img id="js--image-6" src="" alt="skateboard"></li>
+        <li class="priceProduct" data-category="100"><img id="js--image-13" src="" alt="skateboard"></li>
+        <li class="priceProduct" data-category="150"><img id="js--image-3" src="" alt="skateboard"></li>
+        <li class="priceProduct" data-category="300"><img id="js--image-7" src="" alt="skateboard"></li>
+        <li class="priceProduct" data-category="100"><img id="js--image-14" src="" alt="skateboard"></li>
+        <li class="priceProduct" data-category="150"><img id="js--image-4" src="" alt="skateboard"></li>
+        <li class="priceProduct" data-category="300"><img id="js--image-8" src="" alt="skateboard"></li>
+        <li class="priceProduct" data-category="300"><img id="js--image-9" src="" alt="skateboard"></li>
+        <li class="priceProduct" data-category="300"><img id="js--image-10" src="" alt="skateboard"></li>
 
-    </article>
-    
+    </ul>
+
+
+  
 
     <footer id="footer" class="footer">
         <section class="footerBlocks">
@@ -97,6 +115,7 @@
         </section>
 
     </footer>
-    
+
 </body>
+
 </html>

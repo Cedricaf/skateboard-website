@@ -89,35 +89,32 @@ for (let index = 0; index < cartButton.length; index++) {
 
 
 const image = document.getElementById("js--imageChange");
-const circleButton1 = document.getElementById("js--circleButton1");
-const circleButton2 = document.getElementById("js--circleButton2");
-const circleButton3 = document.getElementById("js--circleButton3");
+const circleButtons = [
+  document.getElementById("js--circleButton1"),
+  document.getElementById("js--circleButton2"),
+  document.getElementById("js--circleButton3")
+];
 
-circleButton1.onclick = function () {
-    image.src = "img/rs(1.1).webp";
-    circleButton1.style.border = '0.4rem solid black';
-    circleButton2.style.border = "0";
-    circleButton3.style.border = "0";
+function setActiveButton(activeIndex) {
+  for (let i = 0; i < circleButtons.length; i++) {
+    circleButtons[i].style.border = i === activeIndex ? "0.4rem solid black" : "0";
+  }
 }
 
+circleButtons[0].onclick = function () {
+  image.src = "img/rs(1.1).webp";
+  setActiveButton(0);
+};
 
-circleButton2.onclick = function () {
-    image.src = "img/rs(1.2).webp";
-    circleButton1.style.border = "0rem";
-    circleButton2.style.border = '0.4rem solid black';
-    circleButton3.style.border = "0";
-}
+circleButtons[1].onclick = function () {
+  image.src = "img/rs(1.2).webp";
+  setActiveButton(1);
+};
 
-
-
-circleButton3.onclick = function () {
-    image.src = "img/rs(1.3).webp";
-    circleButton1.style.border = '0rem';
-    circleButton2.style.border = '0rem';
-    circleButton3.style.border = '0.4rem solid black';
-}
-
-
+circleButtons[2].onclick = function () {
+  image.src = "img/rs(1.3).webp";
+  setActiveButton(2);
+};
 
 
 
